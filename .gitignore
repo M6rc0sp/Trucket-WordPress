@@ -1,32 +1,20 @@
-# WordPress
+# WordPress core (não precisa versioná-lo)
+wp-admin/
+wp-includes/
+
+# Uploads e cache
 wp-content/uploads/
 wp-content/backup-*
 wp-content/cache/
 wp-content/upgrade/
 wp-content/upgrade-temp-backup/
 
-# Plugins and themes (opcional - pode versioná-los se quiser)
-# wp-content/plugins/
-# wp-content/themes/
-
 # Sensitive files
 wp-config.php
-.htaccess
-wp-cli.local.yml
-wp-cli.yml
 *.log
 error_log
+.htaccess
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Node/Build
-node_modules/
-npm-debug.log
