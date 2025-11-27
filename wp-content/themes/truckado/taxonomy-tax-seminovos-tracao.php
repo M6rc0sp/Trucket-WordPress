@@ -1,0 +1,1 @@
+<?php wp_redirect( home_url().'/seminovos/?tax-seminovos-tracao[]='.$_GET['tax-seminovos-tracao'], 302 ) ?>

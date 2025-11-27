@@ -1,0 +1,222 @@
+	</div> <!-- <div id="main-content"> -->
+	
+	<footer class="main-footer">
+    	<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="widget-footer-1">
+						<?php dynamic_sidebar('footer-1') ?>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="widget-footer-2">
+						<?php dynamic_sidebar('footer-2') ?>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="widget-footer-3">
+						<?php dynamic_sidebar('footer-3') ?>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="widget-footer-4">
+						<?php dynamic_sidebar('footer-4') ?>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-brand">
+						<?php include(get_stylesheet_directory().'/assets/img/truckado-logo-footer.svg'); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					&copy; Todos os direitos reservados 2025
+				</div>
+				<div class="col-md-4">
+				    <a href="https://rm9brasil.com.br?utm_source=trucket.com.br" target="_blank">
+					<svg id="Camada_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416 501.33" style="width: 50px;"><defs><style>.cls-1,.cls-2{fill:#fff;stroke-width:0px;}.cls-2{fill-rule:evenodd;}</style></defs><path class="cls-1" d="M1382.54,35.41c0,13.15-10.32,23.48-23.76,23.48s-23.9-10.32-23.9-23.48,10.61-23.2,23.9-23.2,23.76,10.32,23.76,23.2ZM1340.82,35.41c0,10.32,7.64,18.53,18.1,18.53s17.68-8.2,17.68-18.39-7.5-18.67-17.82-18.67-17.96,8.34-17.96,18.53ZM1355.1,47.58h-5.37v-23.2c2.12-.42,5.09-.71,8.91-.71,4.38,0,6.36.71,8.06,1.7,1.27.99,2.26,2.83,2.26,5.09,0,2.55-1.98,4.53-4.81,5.37v.28c2.26.85,3.54,2.55,4.24,5.66.71,3.54,1.13,4.95,1.7,5.8h-5.8c-.71-.85-1.13-2.97-1.84-5.66-.42-2.55-1.84-3.68-4.81-3.68h-2.55v9.34ZM1355.24,34.42h2.55c2.97,0,5.37-.99,5.37-3.39,0-2.12-1.56-3.54-4.95-3.54-1.41,0-2.4.14-2.97.28v6.65Z"/><path class="cls-2" d="M1294.28,381.01l64.43-64.42v-107.37l-107.37,107.37h-236.22c-11.82,0-21.47-9.65-21.47-21.47h-64.42c0,47.31,38.58,85.9,85.9,85.9h279.17ZM1025.85,252.16c-53.37,0-96.64-43.26-96.64-96.64s43.27-96.64,96.64-96.64h204.01c71.15,0,128.85,57.69,128.85,128.85l-64.42,64.42h-268.43ZM1025.81,187.74h268.47c0-35.58-28.85-64.42-64.42-64.42h-204.01c-17.79,0-32.21,14.42-32.21,32.21s14.4,32.19,32.17,32.21Z"/><path class="cls-1" d="M786.5,63.62l-307.39,307.39h102.46l245.91-245.91v163.94c0,11.29-9.2,20.49-20.49,20.49v61.48c45.15,0,81.97-36.82,81.97-81.97V63.62h-102.46Z"/><path class="cls-1" d="M106.26,186.84l-60.96,60.96v121.92h60.96v-81.28l101.6-101.6h-101.6Z"/><path class="cls-1" d="M704.54,63.62v61.48s-61.48,61.48-61.48,61.48v-61.48l-217.98,217.99-26.64,26.64h-48.33l-121.92-121.92h-60.96l60.96-60.96h132.08c16.84,0,30.48-13.65,30.48-30.48s-13.65-30.48-30.48-30.48h-213.37l-101.6,101.6v-101.6l60.96-60.96h254.01c50.5,0,91.45,40.94,91.45,91.44s-40.95,91.45-91.45,91.45h-30.48l44.05,44.05,228.23-228.23h102.46Z"/><path class="cls-1" d="M1056.85,477.91h-5.39l23.47-56.77h4.26l23.47,56.77h-5.68l-6.81-16.46h-26.59l-6.72,16.46ZM1076.82,428.9l-11.35,27.91h22.8l-11.45-27.91Z"/><path class="cls-1" d="M1148.35,455.29h-11.64v-4.64h16.84v22.8c-4.73,2.18-11.07,5.87-21.01,5.87-15.8,0-29.05-11.45-29.05-29.8s13.25-29.62,29.05-29.62c6.72,0,14.1,2.27,18.64,5.68v5.49c-4.64-3.6-10.6-6.34-18.64-6.34-13.72,0-23.65,9.94-23.65,24.79s9.94,24.98,23.65,24.98c6.34,0,11.64-1.33,15.8-3.88v-15.33Z"/><path class="cls-1" d="M1197.93,421.14v4.64h-26.97v19.96h22.24v4.64h-22.24v22.9h26.97v4.64h-32.17v-56.77h32.17Z"/><path class="cls-1" d="M1211.94,421.14l34.35,46.27v-46.27h4.92v56.77h-3.6l-34.35-46.27v46.27h-4.92v-56.77h3.6Z"/><path class="cls-1" d="M1289.81,419.91c6.72,0,14.1,2.27,18.64,5.68v5.49c-4.64-3.6-10.6-6.34-18.64-6.34-13.72,0-23.65,9.94-23.65,24.79s9.94,24.79,23.65,24.79c8.04,0,14-2.74,18.64-6.34v5.49c-4.54,3.41-11.92,5.68-18.64,5.68-15.8,0-29.05-11.26-29.05-29.62s13.25-29.62,29.05-29.62Z"/><path class="cls-1" d="M1313.27,421.14h5.96l18.07,29.14,18.07-29.14h5.68l-21.29,33.97v22.8h-5.2v-22.8l-21.29-33.97Z"/></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="smartwhatsapp"></div>
+    <script>
+        $(document).ready(function(){
+            $('#smartwhatsapp').smartWhatsapp({
+                whatsapp: "55<?php echo get_option('mvl_whatsapp') ?>",
+                headerText: "Olá!<br/>Preencha os dados abaixo para falar com nossa equipe.",
+                submitText: "Iniciar chat agora!",
+                timer: 1000,
+                avatarUrl: "",
+                fields: false,
+                // fields: {
+                //     insertName: true,
+                //     insertMsg: true,
+                //     insertEmail: true,
+                //     insertPhone: true,
+                //     options: {
+                //         title: "O que você precisa?",
+                //         fields: [
+                //             {
+                //                 label: "Como funciona?",
+                //                 value: "Como funciona?",
+                //             },
+                //             {
+                //                 label: "Quero trabalhar com a MVL.",
+                //                 value: "Quero trabalhar com a MVL.",
+                //             }
+                //         ]
+                //     }
+                // }
+            })
+        });
+	</script>
+
+	<div id="main-menu-responsive-mask"></div>
+	<div id="main-menu-responsive">
+		<button class="close-menu-responsive">&times;</button>
+		<nav class="navbar">
+
+				<a href="<?php echo home_url(); ?>">
+				<?php
+				if ( has_custom_logo() ) {
+					echo '<span class="site-brand">';
+						the_custom_logo();
+					echo '</span>';
+				} else {
+					echo '<span class="site-brand">';
+						include(get_stylesheet_directory().'/assets/img/truckado-logo.svg');
+					echo '</span>';
+				}
+				?>
+				</a>
+				
+			<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ) ?>
+		</nav>
+	</div>
+
+	<?php wp_footer() ?>
+
+  </body>
+</html>
+
+
+<?php 
+
+// $json = file_get_contents('https://truckado.com.br/wp-json/wp/v2/semi_novos?per_page=99');
+// foreach (json_decode($json) as $key => $value) {
+// 	$args = [
+// 		'post_type'      => 'cpt-seminovos',
+// 		'post_name__in'  => [$value->slug]
+// 	];
+// 	$q = get_posts( $args );
+// 	if(!$q){
+// 		$_args = array(
+// 			'post_type'    => 'cpt-seminovos',
+// 			'post_status'  => $value->status,
+// 			'post_content'      => $value->acf->caracteristicas,
+// 			'post_date'		=> $value->date,
+// 			'post_title'	=> $value->title->rendered,
+// 			'post_name'		=> $value->slug,
+// 			'meta_input'   => array(
+// 				'repasse' => $value->acf->repasse,
+// 				'destaque' => $value->acf->destaque,
+// 				'parcelado' => $value->acf->parcelado,
+// 				'ano' => $value->acf->ano,
+// 				'whatsapp' => $value->acf->whatsapp,
+// 				'telefone' => $value->acf->telefone,
+// 				'preco_de_custo' => $value->acf->repasse,
+// 				'preco_de' => $value->acf->valor_de,
+// 				'preco_de_venda' => $value->acf->valor_venda,
+// 			)
+// 		);
+
+// 		if($value->acf->video){
+// 			$_args['meta-input']['video_do_youtube'] = $value->acf->video[0]->url_video;
+// 		}
+
+// 		if($value->acf->{'icones-caracteristicas'}){
+// 			foreach ($value->acf->{'icones-caracteristicas'} as $k => $v) {
+// 				if( strpos( $v->valor,'KM' )>1 || strpos( $v->valor,'km' )>1 ) {
+// 					$_args['meta_input']['km'] = $v->valor;
+					
+// 				} elseif( strpos( $v->valor,'CV' )>1 || strpos( $v->valor,'cv' )>1 ) {
+// 					$_args['meta_input']['motor'] = $v->valor;
+
+// 				}
+// 			}
+// 		}
+
+
+		
+// 		$id = wp_insert_post($_args);
+// 		echo $id.'<br/>';
+// 	} else {
+// 		echo "Já tem ==========================<br/>";
+// 	}
+// 	// echo "<pre>";
+// 	// 	var_dump( $_args );
+// 	// echo "</pre>";	
+
+// }
+
+//Marcas
+// $json = file_get_contents('https://truckado.com.br/wp-json/wp/v2/tax-tracao?per_page=99');
+// foreach (json_decode($json) as $key => $value) {
+// 	wp_insert_term(
+// 		$value->name,   // the term 
+// 		'tax-seminovos-tracao', // the taxonomy
+// 		array(
+// 			'description' => $value->description,
+// 			'slug'        => $value->slug,
+// 			'parent'      => $value->parent,
+// 		)
+// 	);	
+
+// }
+
+//Clientes
+// $json = file_get_contents('https://trucado.com.br/wp-json/wp/v2/cliente?per_page=99');
+// foreach (json_decode($json) as $key => $value) {
+// 	$args = [
+// 		'post_type'      => 'cpt-clientes',
+// 		'post_name__in'  => [$value->slug]
+// 	];
+// 	$q = get_posts( $args );
+// 	if(!$q){
+// 		$_args = array(
+// 			'post_type'    => 'cpt-clientes',
+// 			'post_status'  => $value->status,
+// 			'post_content'      => $value->content->rendered,
+// 			'post_excerpt'      => $value->excerpt->rendered,
+// 			'post_date'		=> $value->date,
+// 			'post_title'	=> $value->title->rendered,
+// 			'post_name'		=> $value->slug,
+// 		);
+		
+// 		$id = wp_insert_post($_args);
+// 		echo $id.'<br/>';
+// 	} else {
+// 		echo "Já tem ==========================<br/>";
+// 	}
+// 	// echo "<pre>";
+// 	// 	var_dump( $_args );
+// 	// echo "</pre>";	
+
+// }
+
+
+?>
