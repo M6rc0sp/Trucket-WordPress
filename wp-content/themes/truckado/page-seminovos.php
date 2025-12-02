@@ -17,14 +17,19 @@
 		</div>
 	</div>
 </div>
+
+
 <div class="container">
 	<div class="row">
+
         <div class="col-md-3">
             <aside class="page-seminovos-side-filter">
                 <?php get_template_part('template/seminovos','filter');?>
             </aside>
         </div>
 		<div class="col-md-9">
+
+            <?php get_template_part('template/modulo','searchsuggest');?>
 
             <div class="seminovos-lista">
                 <?php

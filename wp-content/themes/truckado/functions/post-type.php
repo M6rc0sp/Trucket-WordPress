@@ -114,5 +114,18 @@ function cpt_registers() {
         		),
     );
     register_post_type( 'cpt-clientes', $args );
+
+    $argsSearch = array(
+      'public' => true,
+      'label'  => 'Sugestões de busca',
+      'menu_icon'   => 'dashicons-buddicons-groups',
+      'rewrite' => array('slug' => 'sugestao-de-busca'),
+      'show_in_rest'  => true,
+      'supports'            => array(
+        			'title',
+        			'author'
+        		),
+    );
+    register_post_type( 'cpt-search-suggest', $argsSearch );
 }
 add_action( 'init', 'cpt_registers' );

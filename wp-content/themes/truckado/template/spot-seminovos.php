@@ -6,11 +6,11 @@
         <a href="<?php the_permalink() ?>">
             <?php if( get_field('galeria_de_imagens') ) : ?>
                 <?php
-                $gallery = explode( ',' , get_field('galeria_de_imagens') );
                 if( gettype( get_field('galeria_de_imagens') ) == "array" ) {
                     $imageField = get_field('galeria_de_imagens');
                     $image =  wp_get_attachment_image_src($imageField[0]['id'],'medium')[0];;
                 } else {
+                    $gallery = explode( ',' , get_field('galeria_de_imagens') );
                     $image = wp_get_attachment_image_src($gallery[0],'medium')[0];
                 }
                 

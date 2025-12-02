@@ -217,7 +217,7 @@ svg#trucado-logo { margin: auto; }
 .spot-seminovos .icones-destaque {padding-top:10px;margin:10px 15px auto;}
 .icones-destaque ul {list-style: none;padding-left:0;margin-bottom:0;display:flex;justify-content: center;}
 .icones-destaque ul > li {padding:0 10px;}
-.icones-destaque ul > li > span{display:block;text-align:center;color:#455465;font-size:12px;}
+.icones-destaque ul > li > span{display:block;text-align:center;color:#455465;font-size:10px;}
 .icones-destaque ul > li > span.icone{height:30px;width:30px;display:flex;justify-content: center;align-items: center;margin:auto;}
 .icones-destaque ul > li > span.valor{display:block;text-align:center;}
 
@@ -459,6 +459,41 @@ div#instagram-feed-area div > a img {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.suggest-item {
+    display: inline-block;
+    width: auto;
+}
+
+.service-box {
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.service-price {
+    color: #009688;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.service-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.service-info {
+    font-size: .9rem;
+}
+
+.service-description p {
+    margin-bottom: 0;
+}
+.service-description {
+    font-size: .9rem;
+    color: #707070;
+}
+
 @media all and (max-width:768px) {
   
   .page-seminovos-side-filter {display:none}
@@ -475,5 +510,27 @@ div#instagram-feed-area div > a img {
 	div#instagram-feed-area {
 		column-count: 2;
 	}
+
+  .spot-seminovos .icones-destaque ul {
+    overflow-x: auto;
+    left: 0;
+    justify-content: start;
+  }
+
+
+}
+
+@media all and (max-width:1200px) {
+  
+
+  .spot-seminovos .icones-destaque ul {
+    overflow-x: auto;
+    left: 0;
+    justify-content: start;
+  }
+  .icones-destaque ul > li > span {
+    font-size:9px!important;
+  }
+
 }
 

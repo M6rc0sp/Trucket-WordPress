@@ -107,4 +107,16 @@ function reg_taxonomies() {
 			'show_admin_column'	=> true
 		)
 	);
+
+	register_taxonomy(
+		'tax-seminovos-services',
+		'cpt-seminovos',
+		array(
+			'label' => __( 'Serviços adicionais' ),
+			'rewrite' => false,
+			'hierarchical' => true,
+			'show_in_rest'	=> true,
+			'show_admin_column'	=> true
+		)
+	);
 }

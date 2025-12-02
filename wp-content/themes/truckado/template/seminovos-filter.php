@@ -5,7 +5,7 @@
 </pre>
 
 <form action="<?php echo home_url() ?>/seminovos" method="get" class="form-filter-container">
-    <div class="widget-filter widget-filter-<?php echo $tax->name; ?>">
+    <div class="widget-filter widget-filter-">
         <div class="widget-filter-fields">
             <div class="form-group">
                 <label>
