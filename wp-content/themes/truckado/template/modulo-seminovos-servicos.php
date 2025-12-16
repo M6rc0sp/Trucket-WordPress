@@ -13,7 +13,8 @@
                     </div>
                 </div>
                 <div class="service-price">
-                    <?php the_field('price',$term) ?>
+                    <?php //the_field('price',$term) ?>
+                    <?php echo formatCurrency(get_field('price',$term), 'BRL', 'pt_BR') . PHP_EOL; ?>
                 </div>
                 <div class="service-description">
                     <p><?php echo $term->description ?></p>

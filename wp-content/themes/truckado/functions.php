@@ -296,3 +296,17 @@ add_action('wp_ajax_nopriv_clientes_loadmore', 'clientes_loadmore'); // wp_ajax_
 function isMobile() {
 	return preg_match("/\b(?:a(?:ndroid|vantgo)|b(?:lackberry|olt|o?ost)|cricket|docomo|hiptop|i(?:emobile|p[ao]d)|kitkat|m(?:ini|obi)|palm|(?:i|smart|windows )phone|symbian|up\.(?:browser|link)|tablet(?: browser| pc)|(?:hp-|rim |sony )tablet|w(?:ebos|indows ce|os))/i", $_SERVER["HTTP_USER_AGENT"]);
 }
+function formatCurrency(float $amount, string $currency = 'USD', string $locale = 'en_US'): string {
+    try {
+        $formatter = new NumberFormatter($locale, NumberFormatter::CURRENCY);
+        $result = $formatter->formatCurrency($amount, $currency);
+
+        if ($result === false) {
+            throw new Exception("Currency formatting failed.");
+        }
+        return $result;
+    } catch (Exception $e) {
+        // Fallback to a simple number_format if intl fails
+        return $currency . ' ' . number_format($amount, 2, '.', ',');
+    }
+}
