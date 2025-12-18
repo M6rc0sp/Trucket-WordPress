@@ -9,12 +9,14 @@
                         <h3 class="mb-0"><?php echo esc_html( $term->name ); ?></h3>
                     </div>
                     <div class="service-radio">
-                        <input type="radio" name="services[]" id="" readonly value="<?php echo esc_html( $term->name ); ?>" data-price="<?php echo esc_html( get_field('price', $term) ); ?>">
+                        <input type="radio" name="services[]" id="" readonly value="<?php echo esc_html( $term->name ); ?>">
                     </div>
                 </div>
-                <div class="service-price">
-                    <?php the_field('price',$term) ?>
-                    <?php //echo formatCurrency(get_field('price',$term), 'BRL', 'pt_BR') . PHP_EOL; ?>
+                <div class="service-price js-service-price" data-price-raw="<?php the_field('price',$term) ?>">
+                    <?php //the_field('price',$term) ?>
+                    <?php if( get_field('price',$term) ) : ?>
+                        <?php echo formatCurrency(get_field('price',$term), 'R$', 'pt_BR') . PHP_EOL; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="service-description">
                     <p><?php echo $term->description ?></p>

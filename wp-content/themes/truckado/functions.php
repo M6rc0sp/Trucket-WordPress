@@ -10,6 +10,14 @@ require_once('functions/shortcode.php'); //Shortcode
 require_once('assets/add/acf-repeater/acf-repeater.php'); //ACF repeater
 require_once('functions/seminovos-query.php'); //Shortcode
 
+
+
+add_filter('template_directory_uri', function($uri) {
+    return 'https://72.61.59.20/wp-content/themes/truckado';
+});
+
+
+
 //  PLUGINS
 // require_once('functions/plugins/newsletter/init.php'); //Custom Sidebar (dynamic_sidebay)
 
@@ -53,7 +61,7 @@ function WPAG_scripts(){
 	// Venobox
 	wp_enqueue_style(
 		'venoboxCss',
-		getAddAssets().'/venobox/venobox.css',
+		getAddAssets().'/venobox2/venobox.css',
 		array(),
 		$ver = false,
 		$media = 'all'
@@ -86,8 +94,9 @@ function WPAG_scripts(){
 	// Venobox
 	wp_enqueue_script(
 		'venoboxJs',
-		getAddAssets().'/venobox/venobox.js',
-		array('jquery')
+		getAddAssets().'/venobox2/venobox.js',
+		array('jquery'),
+		'2'
 	);
 
 	// Venobox
@@ -295,4 +304,34 @@ add_action('wp_ajax_nopriv_clientes_loadmore', 'clientes_loadmore'); // wp_ajax_
 
 function isMobile() {
 	return preg_match("/\b(?:a(?:ndroid|vantgo)|b(?:lackberry|olt|o?ost)|cricket|docomo|hiptop|i(?:emobile|p[ao]d)|kitkat|m(?:ini|obi)|palm|(?:i|smart|windows )phone|symbian|up\.(?:browser|link)|tablet(?: browser| pc)|(?:hp-|rim |sony )tablet|w(?:ebos|indows ce|os))/i", $_SERVER["HTTP_USER_AGENT"]);
+}
+function formatCurrency(
+    float|null $amount,
+    string $currency = 'USD',
+    string $locale = 'en_US'
+): string {
+
+    // Normaliza valor nulo ou inválido
+    if ($amount === null || !is_numeric($amount)) {
+        $amount = 0.0;
+    }
+
+    if (class_exists(NumberFormatter::class)) {
+        try {
+            $formatter = new NumberFormatter($locale, NumberFormatter::CURRENCY);
+            $result = $formatter->formatCurrency((float) $amount, $currency);
+
+            if ($result !== false) {
+                return $result;
+            }
+        } catch (Throwable $e) {
+            // fallback
+        }
+    }
+
+    return sprintf(
+        '%s %s',
+        $currency,
+        number_format((float) $amount, 2, '.', ',')
+    );
 }
